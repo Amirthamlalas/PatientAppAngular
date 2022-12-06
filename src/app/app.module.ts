@@ -7,6 +7,7 @@ import { AddPatientComponent } from './add-patient/add-patient.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewPatientComponent } from './view-patient/view-patient.component';
 
 const myroute:Routes=[
   {
@@ -18,7 +19,8 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     AddPatientComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewPatientComponent
   ],
   imports: [
     BrowserModule,
