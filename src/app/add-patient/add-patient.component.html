@@ -1,24 +1,24 @@
-
+<app-navbar></app-navbar>
 
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label"></label>
+                    <label for="" class="form-label">Patient Name</label>
                     <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label"></label>
+                    <label for="" class="form-label">Address</label>
                     <input name="address" [(ngModel)]="address" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label"></label>
+                    <label for="" class="form-label">Phone Number</label>
                     <input name="phoneno" [(ngModel)]="phoneno" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label"></label>
-                    <input name="dateofAppoinment" [(ngModel)]="dateofAppoinment" type="text" class="form-control">
+                    <label for="" class="form-label">Date of Appoinment</label>
+                    <input name="dateofAppoinment" [(ngModel)]="dateofAppoinment" type="date" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button (click)="readValue()" class="btn btn-success">Add</button>
