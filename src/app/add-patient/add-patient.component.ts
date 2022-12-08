@@ -17,7 +17,7 @@ export class AddPatientComponent {
   readValue=()=>{
     let data:any={"name":this.name,"address":this.address,"phoneno":this.phoneno,"dateofAppoinment":this.dateofAppoinment}
     console.log(data)
-    this.api.addCourse(data).subscribe(
+    this.api.addPatient(data).subscribe(
       (response:any)=>{
         console.log(response)
         if (response.status=="success") {

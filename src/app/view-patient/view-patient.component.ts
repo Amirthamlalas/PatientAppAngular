@@ -10,7 +10,7 @@ export class ViewPatientComponent {
 
   constructor(private api:ApiService){
 
-    this.api.fetchCourse().subscribe(
+    this.api.fetchPatient().subscribe(
       (response)=>{
         this.data=response;
       }
