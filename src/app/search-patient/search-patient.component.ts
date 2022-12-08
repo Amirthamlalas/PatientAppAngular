@@ -27,4 +27,19 @@ constructor(private api:ApiService){}
     )
   }
 
+  deleteBtnClick=(id:any)=>{
+    let data:any={"id":id}
+    this.api.deletePatient(data).subscribe(
+      (response:any)=>{
+        if (response.status=="success") {
+          alert("deleted")
+          
+        } else {
+          alert("something went wrong")
+        }
+      }
+    )
+
+  }
+
 }
