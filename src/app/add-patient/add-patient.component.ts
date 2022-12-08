@@ -22,6 +22,10 @@ export class AddPatientComponent {
         console.log(response)
         if (response.status=="success") {
           alert("Patient added successfully")
+         this.name=""
+          this.address=""
+          this.phoneno=""
+          this.dateofAppoinment=""
           
         } else {
           alert("something went wrong")
